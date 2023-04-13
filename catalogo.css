@@ -1,0 +1,172 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contanier{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "h"
+    "m"
+    "r";
+}
+
+header{
+ grid-area: h;
+ height: 70px;
+ background-color: #002F89;
+ width: 100%;
+}
+
+main{
+  grid-area: m;
+  background-color: #EBEBEB;
+  width: 100%;
+}
+ 
+ .cards{
+    display: flex;
+    padding: 2%;
+    background-color: grey;
+    column-gap: 10%;
+   width: 100%;
+
+ }
+ .card{
+   display: flex;
+    width: 10%;
+ }
+
+ .carding{
+   width: 100%;
+ }
+
+ .carding img{
+   width: 100%;
+ }
+ .info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFC700;
+    height: 32%;
+ }
+
+    
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.barra{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5%;
+   width: 100%;
+}
+
+.busca{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.busca > a{
+   background-color: #FFC700;
+   border-radius: 6px;
+   padding: 2% 5%;
+   display: flex;
+   font-size: 1.5rem;
+}
+
+.search{
+   width: 30%;
+   font-size: 2.4rem;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+   border-radius: 30px;
+   padding: 2% 5%;
+   margin-top: 2%;
+   margin-left: 3%;
+ 
+}
+
+.search input{
+ background: transparent;
+
+ border: none;
+ outline: none;
+ font-size: 1.4rem;
+ padding: 5%;
+}
+
+.search button{
+ border: 0;
+ border-radius: 50%;
+ background: transparent;
+ cursor: pointer;
+}
+
+.search > button{
+ font-size: 1.5rem;
+}
+
+footer{
+   grid-area: r;
+   background-color:#002F89;
+   background-repeat: no-repeat;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 3%;
+   align-items: center;
+   flex-wrap: wrap;
+   column-gap: 2%;
+}
+
+
+@media screen and (max-width:800px){
+   .container{
+     grid-template-areas: 
+     "h"
+     "m"
+     "r";  }
+
+     
+    footer {
+      justify-content: center;
+           }
+
+
+
+  .logo>img {
+      display: none;
+  }
+
+  main img{
+   width: 80%;
+  }
+
+  .cards{
+   flex-direction: column;
+   align-items: center;
+  
+  }
+  .card{
+   width: 40%;
+  }
+}
+
