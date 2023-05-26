@@ -40,6 +40,7 @@ main{
     background-color: rgb(205, 205, 205);
     column-gap: 10%;
     width: 100%;
+    flex-wrap: wrap;
 
  }
  .card{

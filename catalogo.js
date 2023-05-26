@@ -1,4 +1,3 @@
-
 const cards = document.querySelector(".cards");
 
 carregarCatalogo();

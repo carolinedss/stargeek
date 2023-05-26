@@ -24,8 +24,9 @@ botaocadastrar.onclick = (evento) => {
                 foto : nomeArq 
             }
         )
-        localStorage.setItem("catalogo",JSON.stringify(dados));
+        localStorage.setItem("catalogo",JSON.stringify(dados));  
         window.location.assign("catalogo.html");
+        
     }
         else {
             alert("Houve erro no envio do arquivo");
@@ -62,6 +63,15 @@ function editarenvio(evento){
                     });
                    }
 }
+
+function salvarEdicao(pfoto){
+    let dados = JSON.parse(localStorage.getItem("catalogo"));
+    dados[pindice].nome = nome.value;
+    dados[pindice].descricao = descricao.value;
+    dados[pindice].foto = pfoto;
+    localStorage.setItem("catalogo", JSON.stringify(dados));
+    window.location.assign("catalogo.html");
+  }
 
 var fotoa;
 var nomeArq;
