@@ -30,28 +30,32 @@ main{
   grid-area: m;
   background-color: #EBEBEB;
   width: 100%;
+  min-height: 80vh;
+  
 }
  
  .cards{
     display: flex;
     padding: 2%;
-    background-color: grey;
+    background-color: rgb(205, 205, 205);
     column-gap: 10%;
-   width: 100%;
+    width: 100%;
 
  }
  .card{
    display: flex;
-    width: 10%;
+   width: 10%;
+   
  }
 
  .carding{
    width: 100%;
  }
 
- .carding img{
-   width: 100%;
+ .cardimg img{
+   width: 200px;
  }
+
  .info{
     display: flex;
     flex-direction: column;
@@ -60,6 +64,7 @@ main{
     align-items: center;
     background-color: #FFC700;
     height: 32%;
+    justify-content: center;
  }
 
     
@@ -73,8 +78,10 @@ main{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 5%;
-   width: 100%;
+   padding:2%;
+   max-width: 100%;
+  
+   
 }
 
 .busca{
@@ -89,6 +96,8 @@ main{
    padding: 2% 5%;
    display: flex;
    font-size: 1.5rem;
+   width: 200px;
+   justify-content: center;
 }
 
 .search{
